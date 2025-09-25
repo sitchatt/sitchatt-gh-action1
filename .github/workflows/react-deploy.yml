@@ -1,6 +1,5 @@
 name: deploy-react-app
-#on: [push, workflow_dispatch]
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 jobs:
   code_test:
     runs-on: ubuntu-latest
