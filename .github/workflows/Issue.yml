@@ -1,4 +1,4 @@
-name: Generate Issue on PR
+name: Handle issue
 on: issues
 jobs: 
     output:
