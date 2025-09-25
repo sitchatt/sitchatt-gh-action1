@@ -1,10 +1,12 @@
 name: First Action
-on: workflow_dispatch
+on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps: 
-      - name: Print Greeting
-        run: echo "Hello People!"
+      - name: Print Multiline
+        run: |
+          echo "1st Line!"
+          echo "2nd Line!"
       - name: Print GoodBye
         run: echo "Done - Bye!"
