@@ -52,4 +52,10 @@ jobs:
         run: npm ci
       - name: Deploy Application
         run: echo "Deploying the application..."
+
       
+  output:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Generate Output
+              run: echo "${{ toJSON(github.event) }}"
