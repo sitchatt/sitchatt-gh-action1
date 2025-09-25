@@ -1,0 +1,8 @@
+name: Generate Issue on PR
+on: issues
+jobs: 
+    output:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Generate Output
+              run: echo " ${{ toJSON(github.event.issue) }} "
