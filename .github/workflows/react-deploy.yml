@@ -14,3 +14,17 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
+
+  code_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code checkout
+        uses: actions/checkout@v2
+      - name: node setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: install dependencies
+        run: npm ci
+      - name: build
+        run: npm run build
